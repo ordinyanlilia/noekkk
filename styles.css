@@ -1,0 +1,199 @@
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  nav li a {
+    text-decoration: none;
+  }
+  
+  nav li a.active {
+    font-weight: bold;
+  }
+  
+
+ 
+  .menu {
+    position: relative;
+    padding: 20px; /* Добавляем отступы вокруг содержимого */
+    text-align: right; 
+  }
+  
+  .container {
+    position: absolute;
+  }
+  
+  .content {
+    position: relative;
+    height: 0;
+    margin: 0 auto;
+  }
+  .main-photo {   
+    width: 100%; /* Ширина контейнера */
+    max-height:50px; /* Максимальная высота изображения */
+    /* Скрытие изображения, выходящего за границы контейнера */
+    flex: 1; 
+  }
+
+  .main-photo img {
+    width: 100%; /* Ширина изображения равна ширине контейнера */
+    height: auto; /* Автоматический подбор высоты, чтобы сохранить пропорции изображения */
+  }
+
+  .overlay {
+    display: flex;
+    position: absolute;
+    bottom: 0; /* Отступ от нижнего края */
+    background-color: rgb(16, 16, 58); /* Прозрачный черный цвет фона */
+    color: white; /* Цвет текста внутри прямоугольника */
+    padding: 20px 70px;
+    text-align: left;
+  }
+
+  .menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu li {
+    display: inline;
+    margin-right: 40px;
+  }
+  
+  .menu li a {
+    text-decoration: none;
+  }
+  
+  .menu li a.active {
+    font-weight: bold;
+  }
+
+  .background {
+    background-image: url('assets/background-image.jpg');
+    background-size: cover;
+    height: 7vh; /* Высота фонового изображения */
+    position: relative; /* Положение относительно содержащего блока */
+  }
+
+  .image-textcontainer {
+    position: relative;
+  }
+  
+  .image-text {
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+    border-radius: 10px;
+    color: aliceblue;
+    font-size: 35px;
+  }
+
+  .image-twotext {
+    position: absolute;
+    top: 55%;
+    left: 29%;
+    transform: translate(-50%, -50%);
+    padding: 80px;
+    border-radius: 10px;
+    font-size: 10px;
+  }
+
+  .image-twotext button {
+  margin-top: 40px; /* Отступ кнопки от текста */
+  border-radius: 22px; /* Делаем кнопку овальной */
+  padding: 10px 30px; /* Задаем отступы внутри кнопки */
+  background-color: #00458e; /* Устанавливаем цвет фона кнопки */
+  color: #fff; /* Устанавливаем цвет текста кнопки */
+  border: none; /* Убираем границы кнопки */
+  cursor: pointer; /* Устанавливаем курсор в виде указателя */
+  transition: background-color 0.3s; /* Добавляем плавный переход при изменении цвета фона */
+  width: 150px;
+  height:50px ;
+  }
+  .menu {
+    position: fixed; /* Фиксированное позиционирование */
+    top: 0; /* Расположить сверху страницы */
+    left: 0;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    background-color: rgb(19, 65, 122); /* Прозрачный фон */
+    z-index: 1000; /* Установка z-index поверх фонового изображения */
+    transition: background-color 0.3s ease; /* Плавное изменение фона */
+  }
+
+  .full-width-image {
+    width: 100%;
+  }
+  
+  .full-width-image img {
+    width: 100%;
+    height: auto;
+  }
+
+
+
+  .container {
+    position: relative;
+    text-align: center;
+    top: 50px;
+  }
+  
+  .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-container img {
+    width: 300px; /* Задайте размеры изображений по вашему усмотрению */
+    height: 300px;
+    margin: 0 10px; /* Добавьте отступы между изображениями */
+    text-align: center;
+    left: 50;
+  }
+  
+  .menu img {
+  
+    position: absolute; 
+    top: 0; 
+    left: 0;
+    width: 40px; 
+    height: auto; 
+    margin: 10px; 
+  }
+  
+ /* .main-photo {
+    position: absolute;
+    top:100px; /* Позиция основного изображения относительно верхнего края */
+  /*  left: 0px;  Позиция основного изображения относительно левого края */
+  /*  z-index: 10;  Устанавливаем основное изображение поверх фонового */
+    /* Укажите размеры вашего основного изображения 
+   padding: 0;
+   width: 500px;
+   height: 700px;
+  }*/
+  
+
+.indicator-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: gray;
+  display: inline-block;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.indicator-dot.active {
+  background-color: blue;
+}
+
